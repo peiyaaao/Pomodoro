@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B919C2B3F5FEB5AAC213D7A /* Pods_pomodorable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEE3E1C21A55C32A44400F5 /* Pods_pomodorable.framework */; };
 		BFF4E85E1FBBCE570029D5EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF4E85D1FBBCE570029D5EF /* AppDelegate.swift */; };
 		BFF4E8601FBBCE570029D5EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF4E85F1FBBCE570029D5EF /* ViewController.swift */; };
 		BFF4E8631FBBCE570029D5EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF4E8611FBBCE570029D5EF /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11EF159DC68233F7ABC9DBE2 /* Pods-pomodorable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomodorable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pomodorable/Pods-pomodorable.debug.xcconfig"; sourceTree = "<group>"; };
+		8AEE3E1C21A55C32A44400F5 /* Pods_pomodorable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pomodorable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78FB3869E0D81492B696658 /* Pods-pomodorable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomodorable.release.xcconfig"; path = "Pods/Target Support Files/Pods-pomodorable/Pods-pomodorable.release.xcconfig"; sourceTree = "<group>"; };
 		BFF4E85A1FBBCE560029D5EF /* pomodorable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pomodorable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF4E85D1FBBCE570029D5EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFF4E85F1FBBCE570029D5EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B919C2B3F5FEB5AAC213D7A /* Pods_pomodorable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85F949D71F512C112957BB6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11EF159DC68233F7ABC9DBE2 /* Pods-pomodorable.debug.xcconfig */,
+				B78FB3869E0D81492B696658 /* Pods-pomodorable.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE5E34742C2680E1AC650295 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AEE3E1C21A55C32A44400F5 /* Pods_pomodorable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFF4E8511FBBCE560029D5EF = {
 			isa = PBXGroup;
 			children = (
 				BFF4E85C1FBBCE560029D5EF /* pomodorable */,
 				BFF4E85B1FBBCE560029D5EF /* Products */,
+				85F949D71F512C112957BB6B /* Pods */,
+				AE5E34742C2680E1AC650295 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFF4E86C1FBBCE570029D5EF /* Build configuration list for PBXNativeTarget "pomodorable" */;
 			buildPhases = (
+				64A69EB6DD79FA4039A65C5B /* [CP] Check Pods Manifest.lock */,
 				BFF4E8561FBBCE560029D5EF /* Sources */,
 				BFF4E8571FBBCE560029D5EF /* Frameworks */,
 				BFF4E8581FBBCE560029D5EF /* Resources */,
+				1CAB94773EF5F7FD19B9FA24 /* [CP] Embed Pods Frameworks */,
+				4E253359B32851A9E60F14E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CAB94773EF5F7FD19B9FA24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-pomodorable/Pods-pomodorable-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pomodorable/Pods-pomodorable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E253359B32851A9E60F14E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pomodorable/Pods-pomodorable-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64A69EB6DD79FA4039A65C5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pomodorable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFF4E8561FBBCE560029D5EF /* Sources */ = {
@@ -272,10 +355,12 @@
 		};
 		BFF4E86D1FBBCE570029D5EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11EF159DC68233F7ABC9DBE2 /* Pods-pomodorable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = pomodorable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = peiyao.pomodorable.com.pomodorable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,10 +371,12 @@
 		};
 		BFF4E86E1FBBCE570029D5EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B78FB3869E0D81492B696658 /* Pods-pomodorable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = pomodorable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = peiyao.pomodorable.com.pomodorable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
