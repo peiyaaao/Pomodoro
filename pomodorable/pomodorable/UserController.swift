@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class UserController{
+    let user : User?
+    
+    init() {
+        user = User(name: "bob", email: "bob")
+    }
+    
+    func loginUser(email: String?, password: String?) {
+        FirebaseCalls.loginUser(email: email!, password: password!)
+    }
+    func createUser(email: String?, password: String?) {
+        FirebaseCalls.createUser(email: email!, password: password!)
+    }
+}

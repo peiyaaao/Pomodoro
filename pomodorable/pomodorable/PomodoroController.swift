@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+/*class PomodoroController {
+    func jsontoPomodoro() -> Void {
+       //parse json into a pomodoro object
+        return
+    }
+}*/

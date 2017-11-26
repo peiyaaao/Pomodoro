@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9B919C2B3F5FEB5AAC213D7A /* Pods_pomodorable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEE3E1C21A55C32A44400F5 /* Pods_pomodorable.framework */; };
-		BF6B09501FCB1AD500A31542 /* LoginUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B094F1FCB1AD500A31542 /* LoginUIController.swift */; };
+		BF6B09521FCB42C900A31542 /* FirebaseCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B09511FCB42C900A31542 /* FirebaseCalls.swift */; };
+		BF6B09541FCB5BA800A31542 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B09531FCB5BA800A31542 /* User.swift */; };
+		BF6B09561FCB5BDC00A31542 /* Pomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B09551FCB5BDC00A31542 /* Pomodoro.swift */; };
+		BF6B09581FCB617800A31542 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B09571FCB617800A31542 /* UserController.swift */; };
+		BF6B095A1FCB637000A31542 /* PomodoroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B09591FCB637000A31542 /* PomodoroController.swift */; };
 		BF96C1B91FBBD2310084EC69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF96C1B81FBBD2310084EC69 /* GoogleService-Info.plist */; };
 		BF96C1BB1FBBD5100084EC69 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96C1BA1FBBD5100084EC69 /* TimerViewController.swift */; };
 		BF96C1BD1FBBD9410084EC69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96C1BC1FBBD9410084EC69 /* LoginViewController.swift */; };
@@ -22,7 +26,11 @@
 		11EF159DC68233F7ABC9DBE2 /* Pods-pomodorable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomodorable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pomodorable/Pods-pomodorable.debug.xcconfig"; sourceTree = "<group>"; };
 		8AEE3E1C21A55C32A44400F5 /* Pods_pomodorable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pomodorable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78FB3869E0D81492B696658 /* Pods-pomodorable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomodorable.release.xcconfig"; path = "Pods/Target Support Files/Pods-pomodorable/Pods-pomodorable.release.xcconfig"; sourceTree = "<group>"; };
-		BF6B094F1FCB1AD500A31542 /* LoginUIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginUIController.swift; path = /Users/peiyao/Documents/Pomodoro/pomodorable/pomodorable/LoginUIController.swift; sourceTree = "<absolute>"; };
+		BF6B09511FCB42C900A31542 /* FirebaseCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCalls.swift; sourceTree = "<group>"; };
+		BF6B09531FCB5BA800A31542 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BF6B09551FCB5BDC00A31542 /* Pomodoro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro.swift; sourceTree = "<group>"; };
+		BF6B09571FCB617800A31542 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		BF6B09591FCB637000A31542 /* PomodoroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroController.swift; sourceTree = "<group>"; };
 		BF96C1B81FBBD2310084EC69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF96C1BA1FBBD5100084EC69 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimerViewController.swift; path = /Users/peiyao/Documents/Pomodoro/pomodorable/pomodorable/TimerViewController.swift; sourceTree = "<absolute>"; };
 		BF96C1BC1FBBD9410084EC69 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -85,8 +93,12 @@
 		BFF4E85C1FBBCE560029D5EF /* pomodorable */ = {
 			isa = PBXGroup;
 			children = (
-				BF6B094F1FCB1AD500A31542 /* LoginUIController.swift */,
+				BF6B09571FCB617800A31542 /* UserController.swift */,
 				BF96C1BA1FBBD5100084EC69 /* TimerViewController.swift */,
+				BF6B09511FCB42C900A31542 /* FirebaseCalls.swift */,
+				BF6B09531FCB5BA800A31542 /* User.swift */,
+				BF6B09551FCB5BDC00A31542 /* Pomodoro.swift */,
+				BF6B09591FCB637000A31542 /* PomodoroController.swift */,
 				BF96C1BC1FBBD9410084EC69 /* LoginViewController.swift */,
 				BFF4E85D1FBBCE570029D5EF /* AppDelegate.swift */,
 				BFF4E8611FBBCE570029D5EF /* Main.storyboard */,
@@ -232,9 +244,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF96C1BD1FBBD9410084EC69 /* LoginViewController.swift in Sources */,
-				BF6B09501FCB1AD500A31542 /* LoginUIController.swift in Sources */,
+				BF6B09581FCB617800A31542 /* UserController.swift in Sources */,
+				BF6B09541FCB5BA800A31542 /* User.swift in Sources */,
+				BF6B09561FCB5BDC00A31542 /* Pomodoro.swift in Sources */,
 				BF96C1BB1FBBD5100084EC69 /* TimerViewController.swift in Sources */,
 				BFF4E85E1FBBCE570029D5EF /* AppDelegate.swift in Sources */,
+				BF6B095A1FCB637000A31542 /* PomodoroController.swift in Sources */,
+				BF6B09521FCB42C900A31542 /* FirebaseCalls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

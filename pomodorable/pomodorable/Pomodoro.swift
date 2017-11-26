@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class Pomodoro {
+    let lengthMin : Int?
+    let startTime : Date?
+    
+    init() {
+        lengthMin = 0;
+        startTime = Date()
+    }
+    
+}

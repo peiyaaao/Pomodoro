@@ -15,7 +15,7 @@ class TimerViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         authenticated = Auth.auth().addStateDidChangeListener{(auth, user) in
-            //load in the data
+
         }
     }
     override func viewDidLoad() {
