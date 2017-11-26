@@ -7,5 +7,5 @@ target 'pomodorable' do
 
   # Pods for pomodorable
   pod 'Firebase/Core'
-
+  pod ‘FirebaseAuth’
 end

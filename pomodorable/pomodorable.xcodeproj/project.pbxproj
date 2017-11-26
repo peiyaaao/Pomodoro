@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9B919C2B3F5FEB5AAC213D7A /* Pods_pomodorable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEE3E1C21A55C32A44400F5 /* Pods_pomodorable.framework */; };
+		BF6B09501FCB1AD500A31542 /* LoginUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B094F1FCB1AD500A31542 /* LoginUIController.swift */; };
+		BF96C1B91FBBD2310084EC69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF96C1B81FBBD2310084EC69 /* GoogleService-Info.plist */; };
+		BF96C1BB1FBBD5100084EC69 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96C1BA1FBBD5100084EC69 /* TimerViewController.swift */; };
+		BF96C1BD1FBBD9410084EC69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96C1BC1FBBD9410084EC69 /* LoginViewController.swift */; };
 		BFF4E85E1FBBCE570029D5EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF4E85D1FBBCE570029D5EF /* AppDelegate.swift */; };
-		BFF4E8601FBBCE570029D5EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF4E85F1FBBCE570029D5EF /* ViewController.swift */; };
 		BFF4E8631FBBCE570029D5EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF4E8611FBBCE570029D5EF /* Main.storyboard */; };
 		BFF4E8651FBBCE570029D5EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF4E8641FBBCE570029D5EF /* Assets.xcassets */; };
 		BFF4E8681FBBCE570029D5EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF4E8661FBBCE570029D5EF /* LaunchScreen.storyboard */; };
@@ -19,9 +22,12 @@
 		11EF159DC68233F7ABC9DBE2 /* Pods-pomodorable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomodorable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pomodorable/Pods-pomodorable.debug.xcconfig"; sourceTree = "<group>"; };
 		8AEE3E1C21A55C32A44400F5 /* Pods_pomodorable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pomodorable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78FB3869E0D81492B696658 /* Pods-pomodorable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomodorable.release.xcconfig"; path = "Pods/Target Support Files/Pods-pomodorable/Pods-pomodorable.release.xcconfig"; sourceTree = "<group>"; };
+		BF6B094F1FCB1AD500A31542 /* LoginUIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginUIController.swift; path = /Users/peiyao/Documents/Pomodoro/pomodorable/pomodorable/LoginUIController.swift; sourceTree = "<absolute>"; };
+		BF96C1B81FBBD2310084EC69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF96C1BA1FBBD5100084EC69 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimerViewController.swift; path = /Users/peiyao/Documents/Pomodoro/pomodorable/pomodorable/TimerViewController.swift; sourceTree = "<absolute>"; };
+		BF96C1BC1FBBD9410084EC69 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BFF4E85A1FBBCE560029D5EF /* pomodorable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pomodorable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF4E85D1FBBCE570029D5EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFF4E85F1FBBCE570029D5EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFF4E8621FBBCE570029D5EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFF4E8641FBBCE570029D5EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFF4E8671FBBCE570029D5EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +66,7 @@
 		BFF4E8511FBBCE560029D5EF = {
 			isa = PBXGroup;
 			children = (
+				BF96C1B81FBBD2310084EC69 /* GoogleService-Info.plist */,
 				BFF4E85C1FBBCE560029D5EF /* pomodorable */,
 				BFF4E85B1FBBCE560029D5EF /* Products */,
 				85F949D71F512C112957BB6B /* Pods */,
@@ -78,8 +85,10 @@
 		BFF4E85C1FBBCE560029D5EF /* pomodorable */ = {
 			isa = PBXGroup;
 			children = (
+				BF6B094F1FCB1AD500A31542 /* LoginUIController.swift */,
+				BF96C1BA1FBBD5100084EC69 /* TimerViewController.swift */,
+				BF96C1BC1FBBD9410084EC69 /* LoginViewController.swift */,
 				BFF4E85D1FBBCE570029D5EF /* AppDelegate.swift */,
-				BFF4E85F1FBBCE570029D5EF /* ViewController.swift */,
 				BFF4E8611FBBCE570029D5EF /* Main.storyboard */,
 				BFF4E8641FBBCE570029D5EF /* Assets.xcassets */,
 				BFF4E8661FBBCE570029D5EF /* LaunchScreen.storyboard */,
@@ -151,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF4E8681FBBCE570029D5EF /* LaunchScreen.storyboard in Resources */,
+				BF96C1B91FBBD2310084EC69 /* GoogleService-Info.plist in Resources */,
 				BFF4E8651FBBCE570029D5EF /* Assets.xcassets in Resources */,
 				BFF4E8631FBBCE570029D5EF /* Main.storyboard in Resources */,
 			);
@@ -166,11 +176,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-pomodorable/Pods-pomodorable-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -219,7 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF4E8601FBBCE570029D5EF /* ViewController.swift in Sources */,
+				BF96C1BD1FBBD9410084EC69 /* LoginViewController.swift in Sources */,
+				BF6B09501FCB1AD500A31542 /* LoginUIController.swift in Sources */,
+				BF96C1BB1FBBD5100084EC69 /* TimerViewController.swift in Sources */,
 				BFF4E85E1FBBCE570029D5EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EYTCFHUDN6;
 				INFOPLIST_FILE = pomodorable/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -375,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EYTCFHUDN6;
 				INFOPLIST_FILE = pomodorable/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
